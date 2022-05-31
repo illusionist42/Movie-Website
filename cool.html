@@ -1,0 +1,201 @@
+<html>
+<head>
+
+<title>MOVIE WEBSITE</title>
+<link rel="stylesheet" href="cool-style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<!--nav bar starts here--->
+<form id="form">
+	<input type="text" placeholder="Type to search . . ." class="search" id="search"/ >
+</form> 
+
+<!--nav bar ends here--->
+
+
+<!--header starts here--->
+
+        <header id="banner">
+      <div id="banner__contents">
+        <h1 id="banner__title"></h1>
+        <div id="banner__buttons">
+        <button id="banner__button">Play</button>
+        <button id="banner__button">My List</button>
+      </div>
+      <p id="banner__description"></p>
+      </div>
+      <div id="banner__fadeBottom"></div>
+    </header>
+<!--header ends here--->
+
+<!--video cards starts here-->
+<div class="video-card-container">
+<div class="video-card">
+		<img src="images/disney.png" class="video-card-image" alt="" />
+		<video src="video/disney.mp4" mute loop class="card-video" />
+</div>
+<div class="video-card">
+		<img src="images/pixar.png" class="video-card-image" alt="" />
+		<video src="video/pixar.mp4" mute loop class="card-video" />
+</div>
+<div class="video-card">
+		<img src="images/marvel.png" class="video-card-image" alt="" />
+		<video src="video/marvel.mp4" mute loop class="card-video" />
+</div>
+<div class="video-card">
+		<img src="images/star-wars.png" class="video-card-image" alt="" />
+		<video src="video/star-war.mp4"  mute loop class="card-video" />
+</div>
+<div class="video-card">
+		<img src="images/geographic.png" class="video-card-image" alt="" />
+		<video src="video/geographic.mp4" mute loop class="card-video" />
+</div>
+
+</div>
+<script>
+      let clip = document.querySelectorAll(".card-video")
+  
+       for(let i=0;i<clip.length;i++){
+		   clip[i].addEventListener('mouseenter',
+		   function(e){
+			   clip[i].play()
+		   })
+		   clip[i].addEventListener('mouseout',
+		   function(e){
+			   clip[i].pause()
+		   })
+	   }
+</script>
+<!---video cards ends here---->
+
+<!--cards starts here-->
+
+<h1 class="title">Popular</h1>
+<div class="movies-list">
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+<div id="main">
+	<div class="movie">
+		<img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg" alt="image"/>
+		<div class="card-body">
+				<h2 class="name"></h2>
+				<h6 class="des"> </h6>
+			</div>
+	</div>	
+</div>
+</div>
+
+<h1 class="title">Trending<h1>
+<div class="trending-movies-list">
+<div id="trending_main">
+	<div class="movie">
+		<img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg" alt="image"/>
+		<div class="card-body">
+				<h2 class="name"></h2>
+				<h6 class="des"></h6>
+			</div>
+	</div>	
+</div>
+</div>
+
+<h1 class="title">Netflix Originals<h1>
+<div class="netflix-movies-list">
+<div id="netflix_main">
+	<div class="movie">
+		<img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg" alt="image"/>
+		<div class="card-body">
+				<h2 class="name"></h2>
+				<h6 class="des"></h6>
+			</div>
+	</div>	
+</div>
+</div>
+
+
+<h1 class="title">Action<h1>
+<div class="action-movies-list">
+<div id="action_main">
+	<div class="movie">
+		<img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg" alt="image"/>
+		<div class="card-body">
+				<h2 class="name"></h2>
+				<h6 class="des"></h6>
+			</div>
+	</div>	
+</div>
+</div>
+
+
+<h1 class="title">Comedy<h1>
+<div class="comedy-movies-list">
+<div id="comedy_main">
+	<div class="movie">
+		<img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg" alt="image"/>
+		<div class="card-body">
+				<h2 class="name"></h2>
+				<h6 class="des"></h6>
+			</div>
+	</div>	
+</div>
+</div>
+
+<h1 class="title">Horror<h1>
+<div class="horror-movies-list">
+<div id="horror_main">
+	<div class="movie">
+		<img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg" alt="image"/>
+		<div class="card-body">
+				<h2 class="name"></h2>
+				<h6 class="des"></h6>
+			</div>
+	</div>	
+</div>
+</div>
+
+<h1 class="title">Romance<h1>
+<div class="romance-movies-list">
+<div id="romance_main">
+	<div class="movie">
+		<img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg" alt="image"/>
+		<div class="card-body">
+				<h2 class="name"></h2>
+				<h6 class="des"></h6>
+			</div>
+	</div>	
+</div>
+</div>
+
+<h1 class="title">Documentaries<h1>
+<div class="document-movies-list">
+<div id="document_main">
+	<div class="movie">
+		<img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg" alt="image"/>
+		<div class="card-body">
+				<h2 class="name"></h2>
+				<h6 class="des"></h6>
+			</div>
+	</div>	
+</div>
+</div>
+
+<h1 class="title">Science Fiction<h1>
+<div class="science-movies-list">
+<div id="science_main">
+	<div class="movie">
+		<img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg" alt="image"/>
+		<div class="card-body">
+				<h2 class="name"></h2>
+				<h6 class="des"></h6>
+			</div>
+	</div>	
+</div>
+</div>
+<!--cards ends here-->
+<script src="cool.js" ></script>
+</body>
+</html>
