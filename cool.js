@@ -370,6 +370,7 @@ button.addEventListener('click', (e) => {
 	if(searchTerm){
 		get_popular_Movies(searchURL+'&query='+searchTerm);
 		console.log(get_popular_Movies);
+		document.getElementById('popular').innerHTML = "Search Result "
 	}else{
 		get_popular_Movies(API_URL);
 	}
